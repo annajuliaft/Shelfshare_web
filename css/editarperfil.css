@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.main-container {
+    width: 100%; /* Largura total da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno, se necessário */
+    margin-top: 4rem;;
+    height: 75vh;
+}
+
+.main {
+    width: 100%; /* Altera a largura para 100% para se ajustar ao container */
+    display: flex; 
+    justify-content: space-between; /* Espaça os elementos da esquerda e da direita */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 95%; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container na tela */
+    border: 1px solid #ccc; /* Opcional: adiciona uma borda ao redor */
+    border-radius: 10px; /* Opcional: arredonda as bordas */
+    background-color: #f2f2f2; /* Opcional: cor de fundo da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: adiciona sombra */
+}
+
+
+/* Definindo local da div para esquerda */
+.esquerda {
+    width: 100vw;
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 5rem;
+}
+
+/* Definindo local da div para direita */
+.direita {
+    width: 50%;
+    font-size: 100%;
+    margin-top:6%; /* Aumenta o espaço acima do contêiner direito */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ 
+.file-upload-form {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 15vh 2vh; /* Aumente o padding vertical */
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+    width: 30vw;
+    height: auto; 
+    max-height: 60vh; 
+    margin-top: 3vh;
+}
+
+
+.file-upload-label input {
+    display: none;
+}
+
+.file-upload-label svg {
+    height: 10vh;
+    fill: #301c6e;
+    margin-bottom: 20px;
+   
+}
+
+.file-upload-design {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    gap: 6px;
+   
+}
+
+.browse-button {
+    background-color: #301c6e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.browse-button:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+.btn_editar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.editar {
+    padding: 10px 20px;
+    background-color: #301c6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editar:hover {
+    background-color: #0056b3;
+}
+
+.form-control {
+    width: 40vw;
+    padding: 12px;
+    margin: 2% 0;
+    border: 2px solid transparent; /* Borda padrão transparente */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    outline: none; /* Remove a borda padrão ao clicar */
+}
+
+
+
+
+
+.form-control {
+    width: 40vw;
+    padding: 12px;
+    margin: 2% 0;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    outline: none; /* Remove a borda padrão ao clicar */
+    border: 1px solid #ccc; /* Borda fina para a caixa */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de foco */
+}
+
+.form-control:focus {
+    box-shadow: 1px 1px 8px #b4bbee; /* Aumenta a sombra no foco */
+}
+@media screen and (max-width: 768px) {
+    
+    .main {
+        flex-direction: column; /* Altera a direção dos elementos para coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .direita {
+        width: 100%; /* Altera a largura para 100% para se ajustar ao container */
+        margin-top: 2rem; /* Aumenta o espaço acima do contêiner direito */
+    }
+
+    .esquerda {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+    
+}
+
+

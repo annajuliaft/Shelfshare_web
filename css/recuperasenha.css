@@ -1,0 +1,87 @@
+/* Definindo estilo de todo o corpo da tela*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+  
+}
+/* Definindo estilo e tamanho da imagem*/
+img {
+  width: 9rem; /* Tamanho da imagem, ajuste conforme necessário */
+  height: 9rem;
+  overflow: hidden; /* Corta o excesso da imagem */
+  border-radius: 50%;
+  object-fit: cover;
+  
+  
+}
+
+.center {
+  margin-top: 7rem;
+  text-align: center;
+    
+}
+h1{
+  margin:0.7rem;
+}
+.senha{
+  text-align: center;
+}
+.form-group {
+    margin-bottom: 1rem;
+  
+  }
+  /* Definindo estilo do label*/
+  label {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  /* Definindo estilo e tamanho para os inputs*/
+  input {
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    border:none;
+
+
+  }
+  /* Definindo estilo e tamanho para os botões*/
+  button {
+    margin-top: 0.5rem;
+    width: 8rem;
+    padding: 1rem ;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: #301c6e;
+    color: white;
+    border: none;
+     
+  }
+  input:focus{
+    outline: none;
+  }
+  /* Definindo estilo após acessar o botão*/
+  button:hover {
+    background-color: #3e3a63;
+  }
+ 
+  .botao{
+    text-align: center;
+  }  
+
+  .confirmar{
+    margin-top: 2rem;
+  }
+  /* Definindo estilo da tag a*/
+  a{
+  text-decoration: none;
+  color: white;
+  }

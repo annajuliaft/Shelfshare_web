@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+   
+}
+
+
+h1{
+    margin: 1rem 4rem;
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+   
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adiciona isso ao seu CSS existente */
+.livros {
+    display: grid; /* Muda de flex para grid */
+    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas */
+    gap: 2rem; /* Espaçamento entre os itens */
+    width: 100%;
+    margin-top: 0.2rem;
+   
+}
+
+/* Alinha os itens com o h1 */
+.container {
+    margin: 1rem 4rem; /* Já está definido, só garantindo que a margem esteja presente */
+    display: flex;
+    flex-direction: column; /* Certifica-se de que os itens estão em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+}
+
+/* Ajustes adicionais se necessário */
+.item {
+    /* Pode manter o que já tem, mas verifique a largura */
+    background: rgba(252, 246, 252, 0.829);
+    border-radius: 4%;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+    padding: 0.625rem;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    display: flex;
+    flex-direction: column;
+    margin: 0 13px;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.item:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar efeito de elevação */
+}
+
+.item img {
+    width: 15vw;
+    height: 30vh; 
+    border-radius: 4%;
+    object-fit: cover; /* Isso ajuda a cobrir a área do item */
+  
+}
+
+
+.caption {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.p {
+    text-align: justify;
+}
+
+/* Estilo para o banner */
+img[alt="bannerresultados"] {
+    width: 100%;      
+    height: 30vh;     
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    display: block;    /* Remove o espaço em branco ao redor da imagem */
+    margin: 0 auto;    /* Centraliza  */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+

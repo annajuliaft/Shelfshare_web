@@ -1,0 +1,90 @@
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo para o banner */
+img[alt="bannerresultados"] {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    display: block;    /* Remove o espaço em branco ao redor da imagem */
+    margin: 0 auto;    /* Centraliza */
+    margin-bottom: 20px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Grid para os resultados da pesquisa */
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+    padding: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 100rem;
+}
+
+/* Caixa de resultado */
+.book-result {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 12rem;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo dentro da caixa */
+}
+
+/* Efeito ao passar o mouse */
+.book-result:hover {
+    transform: translateY(-10px); /* Eleva o elemento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Imagens do resultado */
+.book-result img {
+    max-width: 100%;      /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-height: 180px;    /* Limita a altura máxima para manter o layout */
+    object-fit: contain;  /* Garante que a imagem se ajuste dentro do contêiner sem cortar */
+    margin-bottom: 15px;  /* Espaço entre a imagem e o conteúdo abaixo */
+}
+
+/* Título do livro */
+.book-result h2 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Autor */
+.book-result p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .book-result {
+        margin: 1rem; /* Reduz a margem nas telas menores */
+        width: 100%;  /* A largura ocupa o máximo do contêiner */
+    }
+
+    #resultados {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o número de colunas */
+    }
+}

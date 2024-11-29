@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container 1: Banner e Foto do Usuário */
+.banner-container {
+    width: 100%;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 10rem;
+    background-color:#301c6e;
+}
+
+.profile-pic {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-pic img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+/* Container 2: Informações do Perfil */
+.profile-info-container {
+    width: 100%;
+    max-width: 70rem;
+    background-color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+}
+
+h1{
+    color: black;
+    font-size: 1rem;
+}
+.profile-info h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.6rem;
+}
+
+.followers-following {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.followers-following p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.profile-actions a {
+    color: #301c6e;
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color:#301c6e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background-color: #b1aac2;
+
+}
+
+/* Container 3: Feed de Livros */
+.destaque {
+    width: 100%;
+    max-width: 70rem;
+    background-color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    
+}
+
+.destaque h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: black;
+}
+
+.livros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item {
+    margin: 1rem;
+    background-color: #dddd;
+    border: 1px solid #ccc;
+    width: 12rem; /* Aumentada a largura */
+    height: 17rem;
+    padding: 20px;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px (0, 0, 0, 0.2);
+}
+
+.image-wrapper img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}

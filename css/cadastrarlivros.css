@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    min-height: 100vh; /* Corrigido para garantir que o body ocupe pelo menos toda a altura da janela */
+    background-color: #dddddd;
+    display: flex;
+    align-items: flex-start; /* Alinhamento do início para que a navbar não suma */
+    flex-direction: column; /* Empilha a navbar e o main verticalmente */
+}
+
+.main-container {
+    width: 120rem; /* Largura total da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 2rem; /* Espaçamento interno, se necessário */
+    align-content: center;
+    margin-top: 3rem;;
+}
+
+.main {
+    width: 100rem; /* Altera a largura para 100% para se ajustar ao container */
+    display: flex; 
+    justify-content: space-evenly; /* Espaça os elementos da esquerda e da direita */
+    align-items: center; /* Alinha os itens ao topo */
+    padding: 2rem; /* Espaçamento interno */
+    max-width: 100%; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container na tela */
+    border: 1px solid #ccc; /* Opcional: adiciona uma borda ao redor */
+    border-radius: 20px; /* Opcional: arredonda as bordas */
+    background-color: #f2f2f2; /* Opcional: cor de fundo da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: adiciona sombra */
+    gap: 5%;
+}
+
+
+/* Definindo local da div para esquerda */
+.esquerda {
+    width: 50%;
+    text-align: center;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Definindo local da div para direita */
+.direita {
+    width: 50%;
+    font-size: 100%;
+    margin: 1%; 
+}
+ 
+
+.file-upload-form {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 15% 2%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+    width: 80%;
+    height: 40%;
+    margin-top: 8%;
+}
+
+.file-upload-label input {
+    display: none;
+}
+
+.file-upload-label svg {
+    height: 8vh;
+    fill: #301c6e;
+    margin-bottom: 20px;
+}
+
+.file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    gap: 0.5rem;
+}
+
+.browse-button {
+    background-color: #301c6e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.browse-button:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.form-control {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.form-select {
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+    border: 1px solid #ccc; /* Borda fina para a caixa */
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de foco */
+}
+
+.sinopse{
+    margin-top: 1rem;
+}
+
+.sinopse textarea {
+    width: 100%;
+    padding: 10px;
+    height: 150px; /* Aumenta a altura do textarea conforme necessário */
+}
+
+.btn_cadastrar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cadastrar {
+    padding: 10px 20px;
+    background-color: #301c6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastrar:hover {
+    background-color: #0056b3;
+}
+
+.form-control, .form-select, .sinopse textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 2% 0;
+    border: 2px solid transparent; /* Borda padrão transparente */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    outline: none; /* Remove a borda padrão ao clicar */
+}
+
+label {
+    margin-right: 32rem;
+}
+
+.autor {
+    margin-right: 36rem;
+}
+
+.editora {
+    margin-right: 35rem;
+}
+
+.genero {
+    margin-right: 35rem;
+}
+
+.descricao {
+    margin-right: 34rem;
+}
+
+
+.form-control, .sinopse textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 2% 0;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    outline: none; /* Remove a borda padrão ao clicar */
+    border: 1px solid #ccc; /* Borda fina para a caixa */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de foco */
+}
+
+.form-control:focus, .sinopse textarea:focus {
+    box-shadow: 1px 1px 8px #b4bbee; /* Aumenta a sombra no foco */
+}
+
+.form-select {
+    width: 100%;
+    height: 5vh;
+    padding: 3%;
+    margin: 5px 0;
+    border-radius: 8px; /* Borda arredondada */
+    outline: none; /* Remove a borda padrão */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+    border: 1px solid #ccc; /* Borda fina para a caixa */
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de foco */
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .esquerda{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        gap: 3rem;
+    }
+    .direita{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .form-selector {
+        padding: 0;
+    }
+}
+

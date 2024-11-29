@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0; /* Remove margens do header */
+}
+
+body{
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+h2 {
+    color: white;
+    margin-right: 6%;
+    margin-left: 5%;
+    font-size: 60px; 
+}
+
+nav {
+    background-color: #301c6e;
+    width: 100%;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex; /* alinha os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between;
+    background-color: #301c6e; 
+    width: 100vw; 
+    height: 8vh; 
+}
+
+.buscar-box {
+    width: 140vh; 
+    height: 5vh; 
+    background-color: #ffff;
+    border-radius: 5px; /* Borda arredondada */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto; /* Centraliza horizontalmente a caixa de texto */
+    padding-left: 40px;
+}
+
+.buscar-box .lupa-buscar {
+    position: absolute;
+    left: 96%; /* Posiciona a lupa no canto esquerdo */
+    height: 100%;
+    width: 2vw; /* Define a largura da área da lupa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .input-buscar {
+    position: absolute;
+    left: 6px;
+    width: 10vw;
+    height: 4vh;
+    line-height: 5vh;
+}
+
+.buscar-box .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 14px; 
+}
+
+.icones {
+    color: white;
+    display: flex; 
+    margin-right: 4%;
+}
+
+/* Estilos para os ícones dentro dos links */
+.icones a {
+    display: flex; /* Garante que o ícone SVG ocupe toda a área clicável do link */
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px; /* Margem entre os links */
+    text-decoration: none; /* Remove a decoração padrão do link */
+    color: white; /* Garante que os ícones mantenham a cor branca */
+}
+
+/* Tamanho dos ícones */
+.icones a svg {
+    width: 3vw;  
+    height: 4vh; 
+}

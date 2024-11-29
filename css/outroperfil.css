@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #dddddd;
+}
+
+
+.main-container {
+    width: 89rem;
+    height: 20rem;
+    display: flex;
+    padding: 20px;
+}
+
+.main-box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.esquerda .product-image img {
+    width: 10rem; /* Define o tamanho da imagem */
+    height: 10rem;
+    border-radius: 50%; /* Torna a imagem circular */
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; /* Garante que a imagem fique bem ajustada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column; /* Organização vertical dos textos */
+    align-items: flex-start; /* Alinhamento à esquerda */
+}
+.product-image img {
+    width: 10rem; /* Define o tamanho da imagem */
+    height: 10rem;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem ao tamanho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column; /* Organização vertical dos textos */
+    justify-content: center; /* Alinha verticalmente os itens */
+    gap: 0.5rem; /* Espaçamento entre os itens */
+    margin-left: 7rem;
+}
+
+.nome h2 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.status {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens horizontalmente */
+    gap: 2rem; /* Espaçamento entre os itens */
+    margin-top: 1rem;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column; /* Organização vertical do número e do texto */
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center;
+}
+
+#numberseg {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.status-item span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.status-item svg {
+    fill: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.destaque {
+    color: white;
+    text-align: center;
+    width: 90%; /* Ocupa toda a largura */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destaque h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: black;
+}
+
+.livros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item {
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 12rem; /* Aumentada a largura */
+    height: 17rem;
+    padding: 20px;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px (0, 0, 0, 0.2);
+}
+
+.image-wrapper img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.btn_cadastrar {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+    align-items: center;
+    margin-top: 1rem; /* Espaçamento superior */
+    
+}
+
+.btn_cadastrar button {
+    background-color: #301c6e; /* Cor de fundo (verde) */
+    color: white; /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    padding: 0.7rem 1.5rem; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 25px; /* Arredondamento */
+    cursor: pointer; /* Muda o cursor para indicar clicável */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    transition: all 0.3s ease; /* Suaviza transições */
+    width: 15rem;
+}
+
+.btn_cadastrar button:hover {
+    background-color: #301c6e; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+
+.btn_cadastrar button:active {
+    color: #000;
+    background-color: #d1caed; /* Cor ao clicar no botão */
+    transform: scale(1); /* Volta ao tamanho original */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+}

@@ -1,0 +1,48 @@
+/* Definido  estilo para toda tela*/
+* {
+    margin: 0.2rem;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+/* Definido  estilo e local para o header*/
+header{
+    text-align: center;
+    font-family: Georgia,sans-serif; 
+    color: #664caf;
+    margin: 3rem;
+}
+/* Definido estilo para todo o corpo da tela*/
+body {
+    font-family: Helvetica, sans-serif; 
+    background-color: #fff;
+}
+/* Definido estilo para todo section*/
+section {
+    max-width: 40rem; 
+    margin: 2rem auto;
+    padding: 2rem; 
+    background-color: #fff; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.6; 
+}
+/* Definido localização para os itens do no container*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+/* Definido  estilo para o footer*/
+footer {
+    background-color: #fff;
+    color: #664caf; 
+    text-align: center; 
+    padding: 1rem;
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    border-top: 0.0625rem solid #ddd;
+}

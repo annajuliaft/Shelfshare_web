@@ -1,0 +1,556 @@
+@media (max-width: 768px) {
+    .banner {
+        padding-top: 40%; /* Ajuste a altura para dispositivos menores */
+    }
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #dddddd;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 70%; /* Define uma altura mínima */
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto; /* Ajuste automático da altura */
+    min-height: 300px; /* Define uma altura mínima */
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Garante que o conteúdo do banner esteja sobre a imagem */
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+p{
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.banner-button {
+    padding: 12px 24px;
+    background-color: #5b4cb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #3e3098;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.section {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+.icon-box1{
+    width: 350px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icon-box1 img{
+    width: 80px;
+}
+
+.icon-box3{
+    width: 350px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.icon-box3 img{
+    width: 80px;
+}
+
+.icon-box {
+    width: 350px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icon-box img {
+    width: 80px;
+}
+
+/* Margem entre os ícones */
+.icones svg {
+    width: 3vw;  /* Aumenta o tamanho dos ícones */
+    height: 4vh; /* Aumenta o tamanho dos ícones */
+}
+
+/* Estilos para o container de pesquisa */
+.pesquisa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaço entre os itens */
+    margin: 50px 0; /* Margem superior e inferior */
+}
+
+.pesquisa-container .item-icone svg {
+    width: 30px;  /* Ajusta o tamanho do ícone de localização */
+    height: 30px;
+    fill: #301c6e;   /* Cor do ícone */
+}
+
+.pesquisa-container .item-input input {
+    padding: 10px;
+    width: 750px; /* Largura da caixa de texto */
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
+    background-color: white;
+}
+
+.item-input input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.pesquisa-container .item-botao button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#d1caed;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa-container .item-botao button:hover {
+    background-color: #301c6e;
+    color: white;
+}
+
+.imagens-grandes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+    margin-top: 4rem;
+    
+}
+
+.imagem-grande img {
+    width: 100%;
+    height: 30vh;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.imagem-grande2 img {
+    width: 95%;
+    height: 30vh;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.imagem-grande img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para o carrossel da sexta parte */
+/* Container do carrossel */
+.carrossel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 3rem;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+    width: 80%; /* Define a largura do carrossel */
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* Faz a imagem e o texto ficarem em colunas, um abaixo do outro */
+    align-items: center;
+    justify-content: space-between; /* Mantém o espaçamento entre a imagem e o texto */
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 100px; /* Ajusta a altura da imagem */
+    object-fit: cover; /* Garante que a imagem seja cortada corretamente sem distorções */
+    border-radius: 8px;
+}
+
+.carrossel-item p {
+    margin-top: 8px; /* Espaçamento entre a imagem e o texto */
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Botões do carrossel (anterior e próximo) */
+.carrossel-btn {
+
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrossel-btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+/* Estilo do carrossel */
+.carrossel {
+    display: flex;
+    gap: 10px;
+    width: 80%; /* Define a largura do carrossel */
+    overflow: hidden; /* Esconde a barra de rolagem */
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Esconder barra de rolagem visual no carrossel */
+.carrossel::-webkit-scrollbar {
+    display: none; /* Para navegadores baseados no WebKit */
+}
+
+.carrossel {
+    -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+    scrollbar-width: none;  /* Para Firefox */
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60rem;
+    height: 40rem;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #654cae;
+}
+
+.input-localizacao {
+    width: 50rem;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    flex-direction: column;
+}
+
+.input-localizacao:focus{
+    outline: none;
+  }
+
+.btn-localizacao {
+    padding: 10px 20px;
+    background-color: #301c6e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.btn-localizacao:hover {
+    background-color: #654cae;
+}
+
+.imagem_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagem_modal img {
+    max-width: 8rem;
+    height: auto;
+}
+.container-lista{
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 95%;
+    margin-left: 0.7rem;
+
+}
+.container-resultado{
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 95%;
+    margin-left: 0.7rem;
+}
+
+.container-resultado:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #7b7b7b;
+}
+
+.endereco i {
+    margin-right: 12px; /* Aumente este valor para mais espaço */
+    margin-left: 1rem;
+    font-size: 18px;
+}
+
+
+/* Estilo geral dos containers */
+.container {
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.destaque {
+    background-color: #f4f4f4;
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.container-destaque {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    width: 87%; /* Ajustado para maior responsividade */
+    margin: 2rem auto; /* Centraliza e dá espaço ao redor */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona profundidade */
+    position: relative;
+    overflow: hidden; /* Esconde partes excedentes */
+}
+
+/* Detalhes decorativos */
+.container-destaque::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+    z-index: 0;
+    transform: rotate(-25deg);
+}
+
+/* Atualiza o texto dentro */
+.container-destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+    color: #301c6e;
+}
+.container-destaque p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    z-index: 1;
+    position: relative;
+}
+
+.container-destaque {
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.livros {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; /* 20px convertido para rem (20/16) */
+    flex-wrap: wrap;
+    padding: 1.25rem; /* 20px convertido para rem */
+}
+
+.item {
+    background-color: #fff;
+    border: 0.0625rem solid #ccc; /* 1px convertido para rem */
+    width: 14rem; /* Largura do item */
+    height: 22rem; /* Altura do item */
+    padding: 1.25rem; /* 20px convertido para rem */
+    border-radius: 0.5rem; /* Mantido em rem */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-0.625rem); /* 10px convertido para rem (10/16) */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px e 16px convertidos para rem */
+}
+
+.image-wrapper img {
+    width: 80%; /* Mantido como porcentagem */
+    height: 80%; /* Mantido como porcentagem */
+    margin-bottom: 0.625rem; /* 10px convertido para rem (10/16) */
+    object-fit: contain;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.625rem 0; /* 10px convertido para rem */
+}

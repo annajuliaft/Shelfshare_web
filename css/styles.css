@@ -1,0 +1,104 @@
+/* Importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+/* Definido estilo para o botão*/
+button{
+    text-decoration: none;
+    color: white;
+    background-color: #301c6e;
+    border: 2px solid #301c6e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* Definido estilo após passar o mouse*/
+footer:hover{
+    background-color: #301c6e;
+    color: #f0f8ff;
+}
+/* Definido estilo do header*/
+header {
+    width: 100%;
+    padding: 1,5rem;
+    position: sticky;
+    top: 0;
+    background-color: #e1dede;
+    z-index: 3;
+}
+/* Definido local da navbar*/
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Definido estilo da logo que pertence ao navbar*/
+#nav_logo {
+    font-size: 24px;
+    color: var(--color-primary-6);
+}
+/* Definido estilo da tag a que pertence a nav */
+.nav-item-active a{
+    font-size: 1.5rem;
+    background-color: var(--color-neutral-2);
+    font-weight: bolder;
+    color: #301c6e;
+    border-bottom: solid #301c6e;
+}
+.nav-item a{
+    font-size: 1.5rem;
+    color: #301c6e;
+    background-color: var(--color-neutral-2);
+    font-weight: bolder;
+    border: 0;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    background-color: aliceblue;
+    color: #301c6e;
+    border-bottom: solid #301c6e;
+}   
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+/* Definido  estilo para o footer*/
+footer {
+    background-color: aliceblue;
+    margin-top: 1rem;
+}
+
+#footer_items {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#footer_items p{
+    color: #664CAF;
+    font-weight: 500;
+}
+#footer_items:hover p{
+    color: white;
+}
+
+
+#copyright {
+    color: aliceblue;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

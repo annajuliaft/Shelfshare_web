@@ -1,0 +1,140 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #fafafa;
+}
+
+.open-dialog-btn {
+padding: 10px 20px;
+font-size: 16px;
+color: white;
+background-color: #301c6e;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin: 20px;
+}
+
+.modal-overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+justify-content: center;
+align-items: center;
+}
+
+.modal {
+background: white;
+padding: 20px;
+border-radius: 10px;
+width: 90%;
+max-width: 500px;
+max-height: 80%;
+overflow-y: auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.notification-section {
+margin-top: 20px;
+}
+
+.notification-section h3 {
+margin: 0 0 10px;
+font-size: 16px;
+color: #333;
+}
+
+.notification-item {
+display: flex;
+align-items: center;
+padding: 10px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+border-bottom: none;
+}
+
+.notification-img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px;
+overflow: hidden;
+}
+
+.notification-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.notification-content {
+flex-grow: 1;
+}
+
+.notification-content p {
+margin: 0;
+font-size: 14px;
+}
+
+.notification-time {
+font-size: 12px;
+color: gray;
+}
+
+.notification-action {
+margin-left: auto;
+}
+
+.action-btn {
+padding: 5px 10px;
+font-size: 14px;
+color: white;
+background-color: #301c6e;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.action-button{
+padding: 5px 10px;
+font-size: 14px;
+color: white;
+background-color: #301c6e;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+cursor: default;
+}
+
+.action-btn.following {
+background-color: #aaa;
+cursor: default;
+}
+
+.modal::-webkit-scrollbar {
+    width: 10px; /* Largura do scrollbar para navegadores baseados em Webkit */
+  }
+
+  .modal::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Cor do fundo do track */
+    border-radius: 5px;
+  }
+
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #301c6e; /* Cor do thumb */
+    border-radius: 5px;
+    border: 2px solid #f0f0f0; /* Adiciona um efeito de borda */
+  }

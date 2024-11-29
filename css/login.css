@@ -1,0 +1,164 @@
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Definindo estilo do botão*/
+.btn-primary{
+    background-color: #664CAF;
+    color: white;
+    border: 0;
+    padding: 2%;
+    width: 90%;
+}
+/* Definindo estilo do botão após passar o mouse*/
+.btn-primary:hover{
+    background-color: white;
+    color: #664CAF;
+    border: solid 1px #664CAF;
+}
+/* Definindo estilo do botão após o click*/
+.btn-primary:active{
+    background-color: #664CAF;
+    color: white;
+}
+/* Definindo estilo do botão enquanto ele está focado*/
+.btn-primary:focus{
+    background-color: #664CAF;
+    color: white;
+}
+/* Definindo o estilo da tag a para texto*/
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #664CAF;
+    border: 2px solid #664CAF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+/* Definindo estilo da tag a após passa o mouse em cima*/
+a:hover{
+    background-color: white;
+    color: #664CAF;
+}
+/* Definindo estilo para o login*/
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #664CAF;
+    border-bottom-right-radius: 3%;
+    border-top-right-radius: 3%;
+}
+/* Definindo estilo para o card*/
+.card{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Definindo localização do textfild*/
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Definindo estilo do label que pertece ao textfield*/
+.textfield label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #664CAF;
+}
+/* Definindo tamanhos máximos da imagem*/
+.imgback{
+    max-width: 30%;
+    max-height: 30%;
+}
+/* Definindo estilos, tamanho e localização dos atributos que pertecem ao card*/
+.card-head{
+    display: flex;
+    padding: 6%;
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.card-head h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #664CAF;
+}
+.card-title{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #664CAF;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card-body button{
+    margin: 3%;
+    width: 80%;
+}
+/* Definindo estilo do form e seus atributos*/
+.form-check{
+    margin-bottom: 2%;
+}
+.form-check a{
+    padding: 0;
+    color: #664CAF;
+    background-color: white;
+    border: 0;
+}
+p{
+    color: red;
+    margin: 0;
+}
+.form-check-input:checked{
+    background-color: #664CAF;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    .right-login{
+        width: 100vw;
+    }
+    .card{
+        width: 80%;
+    }
+    .imgback{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    
+}
