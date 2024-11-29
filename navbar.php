@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>navbar</title>
 </head>
 <body>
 <header>
     <nav>
         <div class="navbar"><!-- Container principal da barra de navegação -->
-                <h2>Shelfshare </h2>
+        <a href="inicial.php">
+            <h2>Shelfshare </h2>
+        </a>
             
             <div class="buscar-box"><!-- Caixa de busca na barra de navegação -->
                 <div class="input-buscar">

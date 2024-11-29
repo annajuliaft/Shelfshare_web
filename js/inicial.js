@@ -135,35 +135,35 @@ function exibirEnderecos() {
 window.onload = exibirEnderecos;
 
 // Função para buscar o livro via API e redirecionar para a página de resultados
-        function searchBook() {
-            const query = document.getElementById('searchQuery').value.trim();
-            if (query) {
-                const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}`;
-                
-                fetch(apiUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.items) {
-                            // Pegando os primeiros 5 resultados e criando um parâmetro de URL
-                            const results = data.items.slice(0, 10).map(item => {
-                                const title = item.volumeInfo.title;
-                                const authors = item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Autor não disponível';
-                                const image = item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/128x200';
-                                return { title, authors, image };
-                            });
-
-                            // Enviando os resultados para a página de resultados como parâmetros de URL
-                            const resultsUrl = `resultados.html?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
-                            window.location.href = resultsUrl;
-                        } else {
-                            alert("Nenhum livro encontrado para sua pesquisa.");
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Erro ao buscar livros:', error);
-                        alert('Ocorreu um erro ao realizar a pesquisa.');
+function searchBook() {
+    const query = document.getElementById('searchQuery').value.trim();
+    if (query) {
+        const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
+        
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.items) {
+                    // Pegando os primeiros 5 resultados e criando um parâmetro de URL
+                    const results = data.items.slice(0, 10).map(item => {
+                        const title = item.volumeInfo.title;
+                        const authors = item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Autor não disponível';
+                        const image = item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/128x200';
+                        return { title, authors, image };
                     });
-            } else {
-                alert('Por favor, insira um nome de livro para pesquisa.');
-            }
-        }
+
+                    // Enviando os resultados para a página de resultados como parâmetros de URL
+                    const resultsUrl = `resultados.php?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
+                    window.location.href = resultsUrl;
+                } else {
+                    alert("Nenhum livro encontrado para sua pesquisa.");
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao buscar livros:', error);
+                alert('Ocorreu um erro ao realizar a pesquisa.');
+            });
+    } else {
+        alert('Por favor, insira um nome de livro para pesquisa.');
+    }
+}

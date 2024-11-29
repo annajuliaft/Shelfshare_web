@@ -16,8 +16,22 @@ h2 {
     color: white;
     margin-right: 6%;
     margin-left: 5%;
-    font-size: 60px; 
+    font-size: 30px; 
 }
+/* Remove o estilo de link do h2 */
+.navbar a h2 {
+    color: inherit; /* Mantém a cor do h2 */
+    color: white;
+    cursor: default; /* Remove o ponteiro de link */
+}
+
+.navbar a {
+   
+    text-decoration: none;
+
+}
+
+
 
 nav {
     background-color: #301c6e;
