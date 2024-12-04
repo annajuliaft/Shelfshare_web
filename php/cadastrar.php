@@ -1,10 +1,10 @@
 <?php
-require 'conexao.php';
+require 'php/conexao.php';
 
 // Verifica se o Usuário e  Email foram preenchidos
 if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['email']) && !empty($_POST['email']) ){
     
-    require 'Usuario.class.php';
+    require 'php/Usuario.class.php';
 
     $usuario = new Usuario();
 

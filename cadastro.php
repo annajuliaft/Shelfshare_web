@@ -19,7 +19,7 @@
             </div>
             <!-- Seção à direita com o formulário de cadastro -->
             <div class="right-login">
-                <form class="card" action="cadastrar.php" method="POST">
+                <form class="card" action="php/cadastrar.php" method="POST">
                     <div class="card-head">
                         <div class="card-title">
                             <h1>Cadastro</h1> 

@@ -5,8 +5,8 @@
 if(!empty($_POST['email']) && !empty($_POST['senha']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     
     // Requisitando os arquivos necessários para conexão e instância da classe
-    require 'conexao.php';
-    require 'Usuario.class.php';
+    require 'php/conexao.php';
+    require 'php/Usuario.class.php';
 
     // Instanciando a classe
     $usuario = new Usuario();

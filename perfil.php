@@ -1,4 +1,4 @@
-<?php require "verifica.php"; ?>
+<?php require "php/verifica.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
