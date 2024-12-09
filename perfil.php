@@ -17,7 +17,7 @@
     <div class="banner-container">
         <div class="banner"></div>
         <div class="profile-pic">
-            <img src="img/boy.jpg" alt="Foto do Usuário">
+            <img src="img/perfilft.jpg" alt="Foto do Usuário">
         </div>
     </div>
 
