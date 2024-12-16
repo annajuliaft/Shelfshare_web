@@ -30,7 +30,7 @@ if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['ema
                         echo "<script>alert('Email ou Senha Incorretos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
                     }
                 } else {
-                    echo "<script>alert('Email ou Senha Inccorretos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
+                    echo "<script>alert('Email ou Senha Incorretos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
                 }
             } else {
                 echo "<script>alert('Senhas não coincidem ou estão vazias!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
