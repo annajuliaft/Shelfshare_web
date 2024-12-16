@@ -2,121 +2,121 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
     margin: 0;
-    background-color: #dddddd;
 }
 
-
-.main-container {
-    width: 89rem;
-    height: 20rem;
-    display: flex;
-    padding: 20px;
-}
-
-.main-box {
+/* Container 1: Banner e Foto do Usuário */
+.banner-container {
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    padding: 0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.esquerda .product-image img {
-    width: 10rem; /* Define o tamanho da imagem */
+.banner {
+    width: 100%;
     height: 10rem;
-    border-radius: 50%; /* Torna a imagem circular */
-    justify-content: center;
-    align-items: center;
-    object-fit: cover; /* Garante que a imagem fique bem ajustada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:#301c6e;
 }
 
-.direita {
-    display: flex;
-    flex-direction: column; /* Organização vertical dos textos */
-    align-items: flex-start; /* Alinhamento à esquerda */
-}
-.product-image img {
-    width: 10rem; /* Define o tamanho da imagem */
-    height: 10rem;
-    border-radius: 50%; /* Torna a imagem circular */
-    object-fit: cover; /* Ajusta a imagem ao tamanho */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 3rem;
-    margin-left: 4rem;
+.profile-pic {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.direita {
-    display: flex;
-    flex-direction: column; /* Organização vertical dos textos */
-    justify-content: center; /* Alinha verticalmente os itens */
-    gap: 0.5rem; /* Espaçamento entre os itens */
-    margin-left: 7rem;
+.profile-pic img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
 }
 
-.nome h2 {
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    white-space: nowrap; /* Impede a quebra de linha */
-}
-
-.status {
-    display: flex;
-    justify-content: flex-start; /* Alinha os itens horizontalmente */
-    gap: 2rem; /* Espaçamento entre os itens */
-    margin-top: 1rem;
-}
-
-.status-item {
-    display: flex;
-    flex-direction: column; /* Organização vertical do número e do texto */
-    align-items: center; /* Centraliza o conteúdo */
+/* Container 2: Informações do Perfil */
+.profile-info-container {
+    width: 100%;
+    max-width: 70rem;
+    background-color: #fff;
+    padding: 1.25rem;
     text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
 }
 
-#numberseg {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #000;
+h1{
+    color: black;
+    font-size: 1rem;
 }
-
-.status-item span {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.status-item svg {
-    fill: #333;
+.profile-info h1 {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    margin-top: 0.4rem;
 }
 
-.destaque {
-    color: white;
-    text-align: center;
-    width: 90%; /* Ocupa toda a largura */
-    display: grid;
-    align-items: center;
+.bio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.6rem;
+}
+
+.followers-following {
+    display: flex;
     justify-content: center;
-    padding: 0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.followers-following p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.profile-actions a {
+    color: #301c6e;
+    text-decoration: none;
+}
+
+.follow-btn {
+    background-color:#301c6e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.follow-btn:hover {
+    background-color: #b1aac2;
+
+}
+
+/* Container 3: Feed de Livros */
+.destaque {
+    width: 100%;
+    max-width: 70rem;
+    background-color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    
 }
 
 .destaque h2 {
@@ -135,7 +135,7 @@ body {
 
 .item {
     margin: 1rem;
-    background-color: #fff;
+    background-color: #dddd;
     border: 1px solid #ccc;
     width: 12rem; /* Aumentada a largura */
     height: 17rem;
@@ -161,39 +161,4 @@ body {
     font-size: 1rem;
     color: #333;
     margin: 10px 0;
-}
-
-.btn_cadastrar {
-    display: flex;
-    justify-content: center; /* Centraliza o botão */
-    align-items: center;
-    margin-top: 1rem; /* Espaçamento superior */
-    
-}
-
-.btn_cadastrar button {
-    background-color: #301c6e; /* Cor de fundo (verde) */
-    color: white; /* Cor do texto */
-    font-size: 1rem; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    padding: 0.7rem 1.5rem; /* Espaçamento interno */
-    border: none; /* Remove a borda */
-    border-radius: 25px; /* Arredondamento */
-    cursor: pointer; /* Muda o cursor para indicar clicável */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-    transition: all 0.3s ease; /* Suaviza transições */
-    width: 15rem;
-}
-
-.btn_cadastrar button:hover {
-    background-color: #301c6e; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumenta levemente o botão */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
-}
-
-.btn_cadastrar button:active {
-    color: #000;
-    background-color: #d1caed; /* Cor ao clicar no botão */
-    transform: scale(1); /* Volta ao tamanho original */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
 }

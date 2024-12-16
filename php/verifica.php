@@ -1,10 +1,10 @@
 <?php
 // Arquivo de verificação se a sessão está ativa
 
-require 'php/conexao.php';
+require 'conexao.php';
 
 if(isset($_SESSION['id']) && !empty($_SESSION['id'])){
-    require_once 'php/Usuario.class.php'; // Requisitando a classe Usuario uma vez para evitar erros de duplicidade
+    require_once 'Usuario.class.php'; // Requisitando a classe Usuario uma vez para evitar erros de duplicidade
 
     $usuario = new Usuario(); // Instanciando a classe
 

@@ -41,12 +41,13 @@ CREATE TABLE `livro` (
 -- Estrutura para tabela `usuario`
 --
 
+
 CREATE TABLE `usuario` (
-  `id` int(11) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `telefone` varchar(20) NOT NULL,
-  `senha` varchar(18) NOT NULL
+  `id` int NOT NULL,
+  `username` varchar(20) COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `telefone` varchar(20) COLLATE utf8mb4_general_ci NOT NULL,
+  `senha` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
