@@ -39,7 +39,7 @@ if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['ema
             echo "<script>alert('Telefone não preenchido!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
         }
     } else {
-        echo "<script>alert('Email ou Senha Incorretos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
+        echo "<script>alert('Email ou Senha incorretos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
     }
 } else {
     echo "<script>alert('Campos obrigatórios não preenchidos!'); setTimeout(function(){ window.location.href = '../cadastro.php'; }, 500);</script>";
