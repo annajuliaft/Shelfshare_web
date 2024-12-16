@@ -21,7 +21,7 @@
             <!-- Coluna à direita com o formulário de login -->
             <div class="right-login">
                 <!-- Formulário de login que envia os dados para o arquivo 'logar.php' -->
-                <form class="card" action="logar.php" method="POST">
+                <form class="card" action="php/logar.php" method="POST">
                     <!-- Cabeçalho do cartão do formulário -->
                     <div class="card-head">
                         <div class="card-title">

@@ -24,7 +24,7 @@ class Usuario{
 
     public function sair(): void{
         session_destroy(); // Destrói a sessão
-        header(header: "Location: login.php"); // Redireciona para a página de login
+        header(header: "Location: ../index.php"); // Redireciona para a página de login
     }
 
     public function logged($id): array{

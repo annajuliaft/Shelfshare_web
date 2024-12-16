@@ -38,7 +38,7 @@
             </div>
             <!-- Botão de editar perfil -->
             <a href="editarperfil.php"><button class="edit-btn">Editar Perfil</button></a>
-            <a href="logout.php"><button class="edit-btn">Sair</button></a>
+            <a href="php/logout.php"><button class="edit-btn">Sair</button></a>
             
         </div>
     </div>
