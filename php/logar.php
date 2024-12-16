@@ -5,8 +5,8 @@
 if(!empty($_POST['email']) && !empty($_POST['senha']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     
     // Requisitando os arquivos necessários para conexão e instância da classe
-    require 'php/conexao.php';
-    require 'php/Usuario.class.php';
+    require 'conexao.php';
+    require 'Usuario.class.php';
 
     // Instanciando a classe
     $usuario = new Usuario();
@@ -18,21 +18,21 @@ if(!empty($_POST['email']) && !empty($_POST['senha']) && filter_var($_POST['emai
 
     if($usuario->logar($email, $senha)){
         if(isset($_SESSION['id'])){
-            header("Location: inicial.php");
+            header("Location: ../inicial.php");
             echo "<script>alert('Logado com sucesso!');</script>";
         }
         else{
-            header("Location: login.php");
+            header("Location: ../login.php");
             echo "<script>alert('Erro no login!');</script>";
         }
     }
     else{
         echo "<script>alert('Email ou Senha Incorretos!');</script>";
-        header("Location: login.php");
+        header("Location: ../login.php");
     }
 
 }else{
-    header("Location: login.php");
+    header("Location: ../login.php");
 }
 
 
