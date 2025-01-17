@@ -32,7 +32,8 @@ CREATE TABLE `livro` (
   `titulo` varchar(50) NOT NULL,
   `autor` varchar(20) NOT NULL,
   `genero` int(11) NOT NULL,
-  `descricao` varchar(100) NOT NULL
+  `descricao` varchar(100) NOT NULL,
+  `capa` VARCHAR(255) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
