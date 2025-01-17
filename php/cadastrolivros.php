@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $genero = $_POST['genero'];
     $descricao = $_POST['descricao'];
 
-    // Processar upload da capa
+    // Processar upload da capa do livro publicado
     $capa = null;
     if (isset($_FILES['capa']) && $_FILES['capa']['error'] === 0) {
         $upload_dir = 'uploads/';
